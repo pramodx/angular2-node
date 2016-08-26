@@ -10,7 +10,7 @@
     // packages tells the System loader how to load when no filename and/or no extension
     var packages = {
         'app':                        { main: 'boot.js',  defaultExtension: 'js' },
-        'rxjs':                       { defaultExtension: 'js' },
+        'rxjs':                       { main: 'Rx', defaultExtension: 'js' },
     };
 
     var packageNames = [
@@ -31,6 +31,9 @@
     });
 
     var config = {
+        paths: {
+            "rxjs/*": "node_modules/rxjs/bundles/Rx.umd.min.js"
+        },
         map: map,
         packages: packages
     };

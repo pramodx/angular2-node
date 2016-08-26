@@ -1,5 +1,5 @@
-import { Component, OnInit } from "@angular/core";
-
+import { Component } from "@angular/core";
+import 'rxjs/Rx';
 import { Message } from "./message";
 import { MessageService } from "./message.service";
 

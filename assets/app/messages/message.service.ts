@@ -19,7 +19,7 @@ export class MessageService {
         
         return this._http.post('http://localhost:3000/message', body, {headers: headers})
             .map(response => {
-                response.json();
+                response.json()
             })
             .catch(error => Observable.throw(error.json()));
         
